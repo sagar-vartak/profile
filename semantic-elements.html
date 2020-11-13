@@ -1,143 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile with semantic elements</title>
-    <link href="./icon.png" rel="icon" type="image/png">
-    <style>body {
+    <link href="./icon.png" rel="icon" type="image/png" />
+    <style>
+      body {
         color: white;
         background-color: black;
       }
-      header{
-          background-image: url(https://static.toiimg.com/photo/72975551.cms);
+      header {
+        background-image: url(https://static.toiimg.com/photo/72975551.cms);
       }
       footer {
         color: white;
         background-image: url(https://static.toiimg.com/photo/72975551.cms);
       }
-        a:link {
+      a:link {
         color: cyan;
-        }
-        a:visited {
+      }
+      a:visited {
         color: red;
-        }
-      </style>
-</head>
-<body>
+      }
+      .me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+      }
+      .details {
+        text-align: center;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
     <div>
-        <header>
-            <a href="#"><img src="./icon.png" width="50" height="50"></a> PROFILE
-            <nav>
-                <span style="margin : 10px">
-                    <a href="#obj">Objective</a></span> 
-                <span style="margin : 10px" >
-                    <a href="#intern">Internships</a></span> 
-                <span style="margin : 10px">
-                    <a href="#edu">Education</a></span>
-                <span style="margin : 10px">
-                    <a href="#skills">Skills</a></span>
-                <span style="margin : 10px">
-                    <a href="#project">Projects</a></span>
-                <span style="margin : 10px">
-                <a href="#AA">Achievement & Awards</a>
-            </span>    
-            </nav>
-            <hr>
-        </header>
+      <header>
+        <a href="#"><img src="./icon.png" width="50" height="50" /></a> PROFILE
+        <nav>
+          <span style="margin: 10px"> <a href="#obj">Objective</a></span>
+          <span style="margin: 10px"> <a href="#intern">Internships</a></span>
+          <span style="margin: 10px"> <a href="#edu">Education</a></span>
+          <span style="margin: 10px"> <a href="#skills">Skills</a></span>
+          <span style="margin: 10px"> <a href="#project">Projects</a></span>
+          <span style="margin: 10px">
+            <a href="#AA">Achievement & Awards</a>
+          </span>
+        </nav>
+        <hr />
+      </header>
     </div>
-    <div>
-        <picture>
-            <img src="/profile/WhatsApp.jpeg" width="300" height="400">
-        </picture>
-       
-    </div>
-
-    <main>
-        <br>
-        
-                <h2><b><p>Sagar Harshad Vartak</p>
+    <div class="me">
+      <picture>
+        <img src="/profile/WhatsApp.jpeg" width="300" height="400" />
+      </picture>
+      <div class="details">
+        <h2>
+          <b
+            ><p>Sagar Harshad Vartak</p>
             <p>xyz city</p>
-            <p>1234567890 | sagarvartak@somemail.com</p> </b></h2>
-            
-       
-        <section>  
-        <h3><b><a id="obj">Objective</a></b></h3>
-        <hr>
-        I seek challenging opportunities where I can fully use my skills for the organisation.
-        </section>
-    
-        <section>
-        <h3><b><a id="intern">Internships</a></b></h3>
-        <hr>
-            <ul>
-                <li><b>BHABHA ATOMIC RESEARCH CENTRE</b>   14/11/2018 - 28/12/2018</li>
-                <li><b>CNS Department, Airport Authority of India</b>   17/06/2019 -28/06/2019</li>
-            </ul>
-        </section>
-        <section>
-        <h3><b><a id="edu">Education</a></b></h3>
-        <hr>
-            <ul>
-                <li><b><p>ATOMIC ENERGY CENTRAL SCHOOL-2, TARAPUR</p>
-                        <p>SSC 2014</p>
-                        67.2%</b></li>
-                <li><b><p>ATOMIC ENERGY JUNIOR COLLEGE, TARAPUR</p>
-                        <P>HSC 2016</P>
-                        62.92%</b></li>
-                <li><b><p>St. John College of Engineering and Management, Palghar</p>
-                        <P>Elctronics & Telecommunication Engineering 2016-2020</P>
-                        6.1(upto sem 7)</b></li>
-            </ul>
-        </section>
-        <section>
-        <h3><b><a id="skills">Skills</a></b></h3>
-        <hr>
-            <ul>
-                <li>Decision making</li>
-                <li>Adaptive</li>
-                <li>Fast grasping</li>
-                <li>Good in communication</li>
-                <li>Teamwork</li>
-            </ul>
-        </section>
-        <section>
-        <h3><b><a id="project">Projects</a></b></h3>
-        <hr>
-            <ul>
-                <li>Sound reactive LED's</li>
-                <li>F.M. Transmitter Circuit</li>
-                <li>Emergency backup light</li>
-                <li>Cell Phone detector</li>
-                <li>Clap Counter in 8086 microprocessor</li>
-                <li>FTP server using Cisco packet Tracer</li>
-                <li>T-shirt ironing & folding machine</li>
-            </ul>
-        </section>
-        <section>
-        <h3><b><a id="AA">Achievements & Awards</a></b></h3>
-        <hr>
-            <ul>
-                <li>Second runner-up in LAN Gaming in 'Counter Strike' College level Annual Sports and Cultural Fest 2016-17 in St.
-                    John College of Engineering and Management, Palghar</li>
-                <li>Certificate of participation in LAN Gaming in 'Counter-Strike' in national level technical event 'MEGALEIO-2018'</li>
-                <li>Certificate of participation in workshop on 'SOLAR TECHNOLOGY' conducted by IEEE at St. John College of
-                    Engineering and Management, Palghar on 26th July, 2018</li>
-                <li>Certificate of participation in workshop on 'Antenna Designing and Fox Hunting' conducted by IEEE at St. John
-                    College of Engineering and Management, Palghar on 15th and 16th MARCH, 2019</li>
-                <li>Certificate of participation in Multiplayer Gaming in 'PUBG' in national level technical event 'MEGALEIO-2019'</li>
-            </ul>
-        </section>
-    </main>
-    <hr>
-    <footer style="background-color: silver; tect">
-        Click on the icon to download the Resume
-        <a href="./CV_2019-07-14-091952 (1).pdf" download="Sample Resume">
-            <img src="/profile/icon.png" width="50" height="50"> 
-        </a>&copy;
-            
-    </footer>
+            <p>1234567890 | sagarvartak@somemail.com</p>
+          </b>
+        </h2>
+      </div>
+    </div>
+    <br />
+    <br />
+    <main>
+      <section>
+        <h3>
+          <b><a id="obj">Objective</a></b>
+        </h3>
+        <hr />
+        I seek challenging opportunities where I can fully use my skills for the
+        organisation.
+      </section>
 
-        
-</body>
+      <section>
+        <h3>
+          <b><a id="intern">Internships</a></b>
+        </h3>
+        <hr />
+        <ul>
+          <li><b>BHABHA ATOMIC RESEARCH CENTRE</b> 14/11/2018 - 28/12/2018</li>
+          <li>
+            <b>CNS Department, Airport Authority of India</b> 17/06/2019
+            -28/06/2019
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          <b><a id="edu">Education</a></b>
+        </h3>
+        <hr />
+        <ul>
+          <li>
+            <b
+              ><p>ATOMIC ENERGY CENTRAL SCHOOL-2, TARAPUR</p>
+              <p>SSC 2014</p>
+              67.2%</b
+            >
+          </li>
+          <li>
+            <b
+              ><p>ATOMIC ENERGY JUNIOR COLLEGE, TARAPUR</p>
+              <p>HSC 2016</p>
+              62.92%</b
+            >
+          </li>
+          <li>
+            <b
+              ><p>St. John College of Engineering and Management, Palghar</p>
+              <p>Elctronics & Telecommunication Engineering 2016-2020</p>
+              6.1(upto sem 7)</b
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          <b><a id="skills">Skills</a></b>
+        </h3>
+        <hr />
+        <ul>
+          <li>Decision making</li>
+          <li>Adaptive</li>
+          <li>Fast grasping</li>
+          <li>Good in communication</li>
+          <li>Teamwork</li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          <b><a id="project">Projects</a></b>
+        </h3>
+        <hr />
+        <ul>
+          <li>Sound reactive LED's</li>
+          <li>F.M. Transmitter Circuit</li>
+          <li>Emergency backup light</li>
+          <li>Cell Phone detector</li>
+          <li>Clap Counter in 8086 microprocessor</li>
+          <li>FTP server using Cisco packet Tracer</li>
+          <li>T-shirt ironing & folding machine</li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          <b><a id="AA">Achievements & Awards</a></b>
+        </h3>
+        <hr />
+        <ul>
+          <li>
+            Second runner-up in LAN Gaming in 'Counter Strike' College level
+            Annual Sports and Cultural Fest 2016-17 in St. John College of
+            Engineering and Management, Palghar
+          </li>
+          <li>
+            Certificate of participation in LAN Gaming in 'Counter-Strike' in
+            national level technical event 'MEGALEIO-2018'
+          </li>
+          <li>
+            Certificate of participation in workshop on 'SOLAR TECHNOLOGY'
+            conducted by IEEE at St. John College of Engineering and Management,
+            Palghar on 26th July, 2018
+          </li>
+          <li>
+            Certificate of participation in workshop on 'Antenna Designing and
+            Fox Hunting' conducted by IEEE at St. John College of Engineering
+            and Management, Palghar on 15th and 16th MARCH, 2019
+          </li>
+          <li>
+            Certificate of participation in Multiplayer Gaming in 'PUBG' in
+            national level technical event 'MEGALEIO-2019'
+          </li>
+        </ul>
+      </section>
+    </main>
+    <hr />
+    <footer style="background-color: silver">
+      Click on the icon to download the Resume
+      <a href="./CV_2019-07-14-091952 (1).pdf" download="Sample Resume">
+        <img src="/profile/icon.png" width="50" height="50" /> </a
+      >&copy;
+    </footer>
+  </body>
 </html>
